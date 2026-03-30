@@ -37,7 +37,7 @@ priority matters the most and i considered that as a mandatory task, and removed
 **b. Tradeoffs**
 
 - Describe one tradeoff your scheduler makes.
-once schedule is full with high priority task(s), another high priority item can't be added.
+once schedule is full with high priority task(s), another high priority item can't be added. schedule is Priority-Based Scheduling so it is sorted as such in the table.
 - Why is that tradeoff reasonable for this scenario?
 Since there is only 3 priority options it is a reasonable tradeoff since they are both high task. 
 ---
