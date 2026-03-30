@@ -19,9 +19,10 @@ SchedulingRules: helps with scheduling conflicts based on overlaps and owner pre
 
 **b. Design changes**
 
-- Did your design change during implementation?
+- Did your design change during implementation? 
+yes
 - If yes, describe at least one change and why you made it.
-
+I made a change to the TaskScheduler because it wasn't handling available windows and conflicts. So i had to 
 ---
 
 ## 2. Scheduling Logic and Tradeoffs
@@ -29,7 +30,9 @@ SchedulingRules: helps with scheduling conflicts based on overlaps and owner pre
 **a. Constraints and priorities**
 
 - What constraints does your scheduler consider (for example: time, priority, preferences)?
+The scheduler considers a max activity time limit and priority. 
 - How did you decide which constraints mattered most?
+priority matters the most and i considered that as a mandatory task, and removed lower priority tasks as optional because of max max activity limit set. 
 
 **b. Tradeoffs**
 
@@ -43,14 +46,16 @@ SchedulingRules: helps with scheduling conflicts based on overlaps and owner pre
 **a. How you used AI**
 
 - How did you use AI tools during this project (for example: design brainstorming, debugging, refactoring)?
+I asked to help me design UML based on the brainstorm and requirements i gave it. It helped me visualize the relationships between objects. I also used it to debug, code, and testing.
 - What kinds of prompts or questions were most helpful?
+I found it more helpful the more specific and descriptive i was with my problem and/or requirements. 
 
 **b. Judgment and verification**
 
 - Describe one moment where you did not accept an AI suggestion as-is.
+I got assistance writing the taskScheduler class, but didn't work as expected. It didn't handle schedule conflicts and didn't add all the tasks.
 - How did you evaluate or verify what the AI suggested?
-
----
+I verified by adding different types of task with different durations and priorities
 
 ## 4. Testing and Verification
 
